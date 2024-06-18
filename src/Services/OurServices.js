@@ -16,7 +16,7 @@ const OurServices = () => {
                 </Typography>
             </Box>
 
-            <Box sx={{mt:{xs:4,sm:6,md:8},mx:{xs:1,sm:2,md:4}}}>
+            <Box sx={{mt:{xs:4,sm:6,md:8},mx:{xs:0,sm:2,md:4}}}>
                 <Grid container spacing={4} justifyContent={'center'}>
                     <Grid item xs={10} sm={5} md={3.5}>
                         <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 2, backgroundColor: '#FEF9EC', px: {xs:2.5,sm:3}, py: 3, borderRadius: '24px',border:'1px solid #F7DE97'  }}>
