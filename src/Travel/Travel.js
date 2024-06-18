@@ -12,6 +12,8 @@ import srilanka from '../Travel/Assets/srilanka.jpg';
 import thailand from '../Travel/Assets/thailand.jpg';
 import vietnam from '../Travel/Assets/vietnam.jpg';
 
+//FOR DEPLOYEMENT
+
 const countries = [
     { name: 'India', image: india },
     { name: 'Bhutan', image: bhutan },
