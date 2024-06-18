@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './NavBar/Navbar'
+import Box from '@mui/material/Box';
+import Main from './Main/Main';
+import What from './Main/What';
+import About from './About/About';
+import OurServices  from './Services/OurServices';
+import Travel from './Travel/Travel';
 
-function App() {
+
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Box>
+      <What />
+      <Navbar />
+      <Main />
+      <About />
+      <OurServices />
+      <Travel/>
+    </Box>
+  )
 }
 
-export default App;
+export default App
