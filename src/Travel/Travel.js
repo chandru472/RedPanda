@@ -40,9 +40,11 @@ const Travel = () => {
                     {countries.map((country, index) => (
                         <Grid item key={index} xs={5.5} sm={5} md={3}>
                             <Box sx={{
-                                p: { xs: 1, sm: 1.5 }, backgroundColor: '#FFEEEE', borderRadius: '16px', boxShadow: 3, transition: 'transform 0.3s ease-in-out',
+                                p: { xs: 1, sm: 1.5 }, backgroundColor: '#FFEEEE', borderRadius: '16px', boxShadow: 3, transition:{
+                                    md:'transform 0.3s ease-in-out',
                                 '&:hover': {
                                     transform: 'translateY(-10px)'
+                                }
                                 },
                                 cursor:'pointer'
                             }}>
