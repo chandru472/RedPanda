@@ -16,10 +16,10 @@ const OurServices = () => {
                 </Typography>
             </Box>
 
-            <Box sx={{mt:{xs:4,sm:6,md:8},mx:{xs:0,sm:2,md:4}}}>
+            <Box sx={{mt:{xs:4,sm:6,md:8},mx:{xs:1,sm:2,md:4}}}>
                 <Grid container spacing={4} justifyContent={'center'}>
                     <Grid item xs={10} sm={5} md={3.5}>
-                        <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 4, backgroundColor: '#FEF9EC', px: {xs:2.5,sm:3}, py: 3, borderRadius: '24px',border:'1px solid #F7DE97'  }}>
+                        <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 2, backgroundColor: '#FEF9EC', px: {xs:2.5,sm:3}, py: 3, borderRadius: '24px',border:'1px solid #F7DE97'  }}>
                             <IconButton disableTouchRipple sx={{
                                 backgroundColor: '#F2C444', p: 2, '&:hover': {
                                     backgroundColor: "#F2C444",
@@ -34,7 +34,7 @@ const OurServices = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={10} sm={5} md={3.5}>
-                        <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 4, backgroundColor: '#E8FCF5', px: 3, py: 3, borderRadius: '24px',border:'1px solid #81ECC8' }}>
+                        <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 2, backgroundColor: '#E8FCF5', px: 3, py: 3, borderRadius: '24px',border:'1px solid #81ECC8' }}>
                             <IconButton disableTouchRipple sx={{
                                 backgroundColor: '#1BDE9C', p: 2, '&:hover': {
                                     backgroundColor: "#1BDE9C",
@@ -49,7 +49,7 @@ const OurServices = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={10} sm={5} md={3.5}>
-                        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent:'center', gap: 4, backgroundColor: '#FFF0F0', px: {xs:2.5,sm:3}, py: 3, borderRadius: '24px',border:'1px solid #FFADAD'  }}>
+                        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent:'center', gap: 2, backgroundColor: '#FFF0F0', px: {xs:2.5,sm:3}, py: 3, borderRadius: '24px',border:'1px solid #FFADAD'  }}>
                             <IconButton disableTouchRipple sx={{
                                 backgroundColor: '#FF6B6B', p: 2, '&:hover': {
                                     backgroundColor: "#FF6B6B",
@@ -64,7 +64,7 @@ const OurServices = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={10} sm={5} md={3.5}>
-                        <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 4, backgroundColor: '#F4EFFC', px: 3, py: 3, borderRadius: '24px',border:'1px solid #C1A9ED'  }}>
+                        <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 2, backgroundColor: '#F4EFFC', px: 3, py: 3, borderRadius: '24px',border:'1px solid #C1A9ED'  }}>
                             <IconButton disableTouchRipple sx={{
                                 backgroundColor: '#8F63DF', p: 2, '&:hover': {
                                     backgroundColor: "#8F63DF",
@@ -79,7 +79,7 @@ const OurServices = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={10} sm={5} md={3.5}>
-                        <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 4, backgroundColor: '#F0F6FF', px: 3, py: 3, borderRadius: '24px',border:'1px solid #ACCDFF'  }}>
+                        <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 2, backgroundColor: '#F0F6FF', px: 3, py: 3, borderRadius: '24px',border:'1px solid #ACCDFF'  }}>
                             <IconButton disableTouchRipple sx={{
                                 backgroundColor: '#6AA5FF', p: 2, '&:hover': {
                                     backgroundColor: "#6AA5FF",
@@ -94,7 +94,7 @@ const OurServices = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={10} sm={5} md={3.5}>
-                        <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 4, backgroundColor: '#FBF0F4', px: {xs:2.5,sm:3}, py: 3, borderRadius: '24px',border:'1px solid #EAACC5'  }}>
+                        <Box sx={{ display: 'flex', alignItems: 'center',justifyContent:'center', gap: 2, backgroundColor: '#FBF0F4', px: {xs:2.5,sm:3}, py: 3, borderRadius: '24px',border:'1px solid #EAACC5'  }}>
                             <IconButton disableTouchRipple sx={{
                                 backgroundColor: '#D96A98', p: 2, '&:hover': {
                                     backgroundColor: "#D96A98",
