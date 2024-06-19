@@ -13,7 +13,6 @@ import PlaceIcon from '@mui/icons-material/Place';
 import logo1 from "./logo (1).png";
 import { HashLink as Link } from 'react-router-hash-link';
 
-
 function ElevationScroll(props) {
     const { children, window } = props;
     const trigger = useScrollTrigger({
@@ -34,6 +33,12 @@ ElevationScroll.propTypes = {
 
 const drawerWidth = 240;
 
+const handleScroll = (el) => {
+    const yOffset = -80; // Adjust this value to match the height of your AppBar
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+};
+
 export default function ElevateAppBar(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -41,8 +46,6 @@ export default function ElevateAppBar(props) {
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
-    
-    
 
     const drawer = (
         <Box onClick={handleDrawerToggle}>
@@ -52,15 +55,15 @@ export default function ElevateAppBar(props) {
             <Divider />
 
             <List>
-                <Link smooth to='/#about' style={{ textDecoration: 'none' }}>
+                <Link smooth to='/#about' scroll={handleScroll} style={{ textDecoration: 'none', color: 'black' }}>
                     <ListItem disablePadding>
-                        <ListItemButton >
+                        <ListItemButton>
                             <ListItemText>About</ListItemText>
                         </ListItemButton>
                     </ListItem>
                 </Link>
 
-                <Link smooth to='/#services' style={{ textDecoration: 'none' }}>
+                <Link smooth to='/#services' scroll={handleScroll} style={{ textDecoration: 'none', color: 'black' }}>
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemText>Services</ListItemText>
@@ -108,9 +111,10 @@ export default function ElevateAppBar(props) {
 
                             <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
                                 <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <Link smooth to='/#about' style={{ textDecoration: 'none' }}>                                    <Typography sx={{ mx: { sm: 1, md: 2 }, color: "black", fontSize: { sm: "0.9rem", md: "1rem" }, }}>About</Typography>
+                                    <Link smooth to='/#about' scroll={handleScroll} style={{ textDecoration: 'none' }}>
+                                        <Typography sx={{ mx: { sm: 1, md: 2 }, color: "black", fontSize: { sm: "0.9rem", md: "1rem" } }}>About</Typography>
                                     </Link>
-                                    <Link smooth to='/#services' style={{ textDecoration: 'none' }}>
+                                    <Link smooth to='/#services' scroll={handleScroll} style={{ textDecoration: 'none' }}>
                                         <Typography sx={{ mx: { sm: 1, md: 2 }, color: "black", fontSize: { sm: "0.9rem", md: "1rem" } }}>Services</Typography>
                                     </Link>
                                     <Box sx={{ display: "flex", alignItems: "center", mx: { sm: 1, md: 2 }, color: "black" }}>
