@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Box } from '@mui/material';
+import { Box, IconButton } from '@mui/material';
 
 const What = () => {
     const [showFab, setShowFab] = useState(false);
@@ -23,6 +23,7 @@ const What = () => {
 
     return (
         <Box
+
             sx={{
                 position: 'fixed',
                 top: '50%',
@@ -30,6 +31,7 @@ const What = () => {
                 transform: 'translateY(-50%)', // Centers the Fab vertically
                 zIndex: 1000,
                 outline: 'none', // Ensure no outline
+                boxShadow: 'none', // Ensure no box shadow
             }}
         >
             {showFab && (
@@ -46,13 +48,17 @@ const What = () => {
                         borderBottomLeftRadius: '36px', // Bottom left corner
                         cursor: 'pointer',
                         outline: 'none', // Ensure no outline
+                        boxShadow: 'none', // Ensure no box shadow
                         '&:focus': {
                             outline: 'none', // Remove focus outline
+                            boxShadow: 'none', // Remove focus box shadow
                         }
                     }}
                     aria-label="whatsapp"
                 >
-                    <WhatsAppIcon sx={{ color: "white", width: { xs: 44, sm: 56, md: 64 }, height: { xs: 44, sm: 56, md: 64 }, p: 0.5, zIndex: 10 }} />
+                    <IconButton>
+                        <WhatsAppIcon sx={{ color: "white", width: { xs: 44, sm: 56, md: 64 }, height: { xs: 44, sm: 56, md: 64 }, p: 0.5, zIndex: 10, outline: 'none', boxShadow: 'none' }} />
+                    </IconButton>
                 </Box>
             )}
         </Box>
