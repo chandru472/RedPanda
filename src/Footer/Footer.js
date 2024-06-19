@@ -79,10 +79,12 @@ const Footer = () => {
                                     Follow Us
                                 </Typography>
                                 <Box sx={{ mt: 2 }}>
-                                    <Fab sx={{ backgroundColor: 'white', mx: 0.5, color: '#FF6B6B' }}>
+                                    <Fab component='a'
+                                        href='https://wa.me/916369842254' sx={{ backgroundColor: 'white', mx: 0.5, color: '#FF6B6B' }}>
                                         <WhatsAppIcon />
                                     </Fab>
-                                    <Fab sx={{ backgroundColor: 'white', mx: 0.5, color: '#FF6B6B' }}>
+                                    <Fab component='a'
+                                        href='https://www.instagram.com/chan_dru472?igsh=Z2UxMmR2M3Bib3U=' sx={{ backgroundColor: 'white', mx: 0.5, color: '#FF6B6B' }}>
                                         <InstagramIcon />
                                     </Fab>
                                     <Fab sx={{ backgroundColor: 'white', mx: 0.5, color: '#FF6B6B' }}>
