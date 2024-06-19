@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Box, IconButton } from '@mui/material';
+import { Box } from '@mui/material';
 
 const What = () => {
     const [showFab, setShowFab] = useState(false);
@@ -36,6 +36,7 @@ const What = () => {
         >
             {showFab && (
                 <Box
+                    component='a' href='www.google.com'
                     sx={{
                         backgroundColor: '#25D366',
                         width: { xs: 56, sm: 64, md: 72 },
@@ -56,9 +57,8 @@ const What = () => {
                     }}
                     aria-label="whatsapp"
                 >
-                    <IconButton>
-                        <WhatsAppIcon sx={{ color: "white", width: { xs: 44, sm: 56, md: 64 }, height: { xs: 44, sm: 56, md: 64 }, p: 0.5, zIndex: 10, outline: 'none', boxShadow: 'none' }} />
-                    </IconButton>
+
+                    <WhatsAppIcon sx={{ color: "white", width: { xs: 44, sm: 56, md: 64 }, height: { xs: 44, sm: 56, md: 64 }, p: 0.5, zIndex: 10, outline: 'none', boxShadow: 'none' }} />
                 </Box>
             )}
         </Box>
