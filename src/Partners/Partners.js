@@ -18,41 +18,41 @@ const Partners = () => {
                 </Typography>
             </Box>
 
-            <Box sx={{mt:8}}>
+            <Box sx={{ mt: 8,mx:1.2 }}>
                 <Grid container spacing={2} justifyContent={'center'}>
 
                     <Grid item>
-                        <Box component='img' src={via} alt='partner' height={80} width={112} />
+                        <Box component='img' src={via} alt='partner' sx={{ height: { xs: '70px', md: '80px' }, width: { xs: '102px', md: '112px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box component='img' src={ebix} alt='partner' height={80} width={112} />
+                        <Box component='img' src={ebix} alt='partner' sx={{ height: { xs: '70px', md: '80px' }, width: { xs: '102px', md: '112px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box component='img' src={dl} alt='partner' height={80} width={112} />
+                        <Box component='img' src={dl} alt='partner' sx={{ height: { xs: '70px', md: '80px' }, width: { xs: '102px', md: '112px' } }} />
                     </Grid>
 
 
 
                     <Grid item>
-                        <Box component='img' src={baby} alt='partner' height={80} width={112} />
+                        <Box component='img' src={baby} alt='partner' sx={{ height: { xs: '70px', md: '80px' }, width: { xs: '102px', md: '112px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box component='img' src={kreat} alt='partner' height={80} width={112} />
+                        <Box component='img' src={kreat} alt='partner' sx={{ height: { xs: '70px', md: '80px' }, width: { xs: '102px', md: '112px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box component='img' src={med} alt='partner' height={80} width={112} />
+                        <Box component='img' src={med} alt='partner' sx={{ height: { xs: '70px', md: '80px' }, width: { xs: '102px', md: '112px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box component='img' src={prk} alt='partner' height={80} width={112} />
+                        <Box component='img' src={prk} alt='partner' sx={{ height: { xs: '70px', md: '80px' }, width: { xs: '102px', md: '112px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box component='img' src={yk} alt='partner' height={80} width={112} />
+                        <Box component='img' src={yk} alt='partner' sx={{ height: { xs: '70px', md: '80px' }, width: { xs: '102px', md: '112px' } }} />
                     </Grid>
 
                 </Grid>
