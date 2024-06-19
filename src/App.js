@@ -4,9 +4,10 @@ import Box from '@mui/material/Box';
 import Main from './Main/Main';
 import What from './Main/What';
 import About from './About/About';
-import OurServices  from './Services/OurServices';
+import OurServices from './Services/OurServices';
 import Travel from './Travel/Travel';
 import Packages from './Packages/Packages';
+import Partners from './Partners/Partners';
 
 
 
@@ -19,8 +20,9 @@ const App = () => {
       <Main />
       <About />
       <OurServices />
-      <Travel/>
-      <Packages/>
+      <Travel />
+      <Packages />
+      <Partners />
     </Box>
   )
 }
