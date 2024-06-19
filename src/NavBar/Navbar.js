@@ -111,9 +111,9 @@ export default function ElevateAppBar(props) {
                                 </ImageListItem>
                             </Box>
 
-                            <Box data-aos="fade-down"
-                                data-aos-easing="linear"
-                                data-aos-duration="1500" sx={{ display: { xs: 'none', sm: 'flex' } }}>
+                            <Box data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" sx={{ display: { xs: 'none', sm: 'flex' } }}>
                                 <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                                     <Link smooth to='/#about' scroll={handleScroll} style={{ textDecoration: 'none' }}>
                                         <Typography sx={{ mx: { sm: 1, md: 2 }, color: "black", fontSize: { sm: "0.9rem", md: "1rem" } }}>About</Typography>

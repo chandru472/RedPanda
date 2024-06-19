@@ -43,9 +43,9 @@ const Travel = () => {
                 <Grid container justifyContent={'center'} spacing={4}>
                     {countries.map((country, index) => (
                         <Grid item key={index} xs={5.5} sm={5} md={3}>
-                            <Box data-aos="flip-left"
-                                data-aos-easing="ease-out-cubic"
-                                data-aos-duration="2000" sx={{
+                            <Box data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" sx={{
                                     p: { xs: 1, sm: 1.5 },
                                     backgroundColor: '#FFEEEE',
                                     borderRadius: '16px',

@@ -22,53 +22,53 @@ const Partners = () => {
                 <Grid container spacing={3} justifyContent={'center'}>
 
                     <Grid item>
-                        <Box data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000" component='img' src={via} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
+                        <Box data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" component='img' src={via} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000" component='img' src={ebix} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
+                        <Box data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" component='img' src={ebix} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000" component='img' src={dl} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
+                        <Box data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" component='img' src={dl} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
                     </Grid>
 
 
 
                     <Grid item>
-                        <Box data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000" component='img' src={baby} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
+                        <Box data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" component='img' src={baby} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000" component='img' src={kreat} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
+                        <Box data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" component='img' src={kreat} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000" component='img' src={med} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
+                        <Box data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" component='img' src={med} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000" component='img' src={prk} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
+                        <Box data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" component='img' src={prk} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
                     </Grid>
 
                     <Grid item>
-                        <Box data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000" component='img' src={yk} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
+                        <Box data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" component='img' src={yk} alt='partner' sx={{ height: { xs: '65px', md: '70px' }, width: { xs: '95px', md: '106px' } }} />
                     </Grid>
 
                 </Grid>
