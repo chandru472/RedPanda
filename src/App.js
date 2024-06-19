@@ -8,6 +8,7 @@ import OurServices from './Services/OurServices';
 import Travel from './Travel/Travel';
 import Packages from './Packages/Packages';
 import Partners from './Partners/Partners';
+import Footer from './Footer/Footer';
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
       <Travel />
       <Packages />
       <Partners />
+      <Footer />
     </Box>
   )
 }
