@@ -5,7 +5,7 @@ import boat from './boat.jpg';
 const About = () => {
     return (
         <div id='about'>
-            <Box sx={{ mt: {xs:8,md:12} }} >
+            <Box sx={{ mt: { xs: 8, md: 12 } }} >
                 <Box data-aos="zoom-in-up">
                     <Typography sx={{ fontWeight: "550", fontFamily: "serif", fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, px: { xs: 1, sm: 0 }, color: "#FF6B6B", textAlign: "center", letterSpacing: 2 }}>
                         About Us
@@ -13,7 +13,9 @@ const About = () => {
                 </Box>
 
                 <Box sx={{ display: { xs: "block", md: "flex" }, mx: { xs: 2, sm: 4, md: 6 }, gap: 4, alignItems: "center", mt: { xs: 4, sm: 5, md: 8 } }}>
-                    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                    <Box data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" sx={{ display: 'flex', justifyContent: 'center' }}>
                         <ImageListItem sx={{ width: { xs: "400px", sm: "533px", md: '634px' }, height: { xs: '300px', sm: '350px', md: '400px' } }}>
                             <Box
                                 component="img"
