@@ -23,7 +23,6 @@ const What = () => {
 
     return (
         <Box
-
             sx={{
                 position: 'fixed',
                 top: '50%',
@@ -36,7 +35,6 @@ const What = () => {
         >
             {showFab && (
                 <Box
-                    component='a' href='www.google.com'
                     sx={{
                         backgroundColor: '#25D366',
                         width: { xs: 56, sm: 64, md: 72 },
@@ -48,17 +46,36 @@ const What = () => {
                         borderTopRightRadius: '36px', // Top right corner
                         borderBottomLeftRadius: '36px', // Bottom left corner
                         cursor: 'pointer',
-                        outline: 'none', // Ensure no outline
-                        boxShadow: 'none', // Ensure no box shadow
+                        outline: 'none !important', // Ensure no outline
+                        boxShadow: 'none !important', // Ensure no box shadow
                         '&:focus': {
-                            outline: 'none', // Remove focus outline
-                            boxShadow: 'none', // Remove focus box shadow
+                            outline: 'none !important', // Remove focus outline
+                            boxShadow: 'none !important', // Remove focus box shadow
+                        },
+                        '&:active': {
+                            outline: 'none !important', // Remove active outline
+                            boxShadow: 'none !important', // Remove active box shadow
+                        },
+                        '&:visited': {
+                            outline: 'none !important', // Remove visited outline
+                            boxShadow: 'none !important', // Remove visited box shadow
                         }
                     }}
                     aria-label="whatsapp"
+                    style={{ outline: 'none', boxShadow: 'none' }} // Inline style override
                 >
-
-                    <WhatsAppIcon sx={{ color: "white", width: { xs: 44, sm: 56, md: 64 }, height: { xs: 44, sm: 56, md: 64 }, p: 0.5, zIndex: 10, outline: 'none', boxShadow: 'none' }} />
+                    <WhatsAppIcon 
+                        sx={{ 
+                            color: "white", 
+                            width: { xs: 44, sm: 56, md: 64 }, 
+                            height: { xs: 44, sm: 56, md: 64 }, 
+                            p: 0.5, 
+                            zIndex: 10, 
+                            outline: 'none !important', 
+                            boxShadow: 'none !important' 
+                        }} 
+                        style={{ outline: 'none', boxShadow: 'none' }} // Inline style override
+                    />
                 </Box>
             )}
         </Box>
