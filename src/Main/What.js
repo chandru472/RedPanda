@@ -35,6 +35,7 @@ const What = () => {
         >
             {showFab && (
                 <Box
+                component='p'
                     sx={{
                         backgroundColor: '#25D366',
                         width: { xs: 56, sm: 64, md: 72 },
