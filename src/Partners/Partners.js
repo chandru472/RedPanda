@@ -18,7 +18,7 @@ const Partners = () => {
                 </Typography>
             </Box>
 
-            <Box sx={{ mt: 8,mx:1.2 }}>
+            <Box sx={{ mt: 8,mx:1.3 }}>
                 <Grid container spacing={2} justifyContent={'center'}>
 
                     <Grid item>
