@@ -33,7 +33,7 @@ const Travel = () => {
 
     return (
         <Box sx={{ mt: 8, backgroundColor: '#FFE7E7', py: 4 }}>
-            <Box>
+            <Box data-aos="zoom-in-up">
                 <Typography sx={{ fontWeight: "550", fontFamily: "serif", fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, px: { xs: 1, sm: 0 }, color: "#FF6B6B", textAlign: "center", letterSpacing: 3 }}>
                     Top Travelling Countries
                 </Typography>
@@ -43,18 +43,20 @@ const Travel = () => {
                 <Grid container justifyContent={'center'} spacing={4}>
                     {countries.map((country, index) => (
                         <Grid item key={index} xs={5.5} sm={5} md={3}>
-                            <Box sx={{
-                                p: { xs: 1, sm: 1.5 }, 
-                                backgroundColor: '#FFEEEE', 
-                                borderRadius: '16px', 
-                                boxShadow: 3, 
-                                [theme.breakpoints.up('md')]: {
-                                    transition: 'transform 0.3s ease-in-out',
-                                    '&:hover': {
-                                        transform: 'translateY(-10px)'
+                            <Box data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" sx={{
+                                    p: { xs: 1, sm: 1.5 },
+                                    backgroundColor: '#FFEEEE',
+                                    borderRadius: '16px',
+                                    boxShadow: 3,
+                                    [theme.breakpoints.up('md')]: {
+                                        transition: 'transform 0.3s ease-in-out',
+                                        '&:hover': {
+                                            transform: 'translateY(-10px)'
+                                        }
                                     }
-                                }
-                            }}>
+                                }}>
                                 <Box
                                     component='img'
                                     src={country.image}

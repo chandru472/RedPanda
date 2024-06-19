@@ -22,7 +22,7 @@ const packagesData = [
 const Packages = () => {
     return (
         <Box sx={{ mt: 10 }}>
-            <Box>
+            <Box data-aos="zoom-in-up">
                 <Typography
                     sx={{
                         fontWeight: "550",
@@ -42,7 +42,9 @@ const Packages = () => {
                 <Grid container spacing={4} justifyContent="center">
                     {packagesData.map((pkg) => (
                         <Grid item key={pkg.id}>
-                            <Box sx={{ px: 2, boxShadow: 3, pt: 2, pb: 4, borderRadius: '16px' }}>
+                            <Box data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" sx={{ px: 2, boxShadow: 3, pt: 2, pb: 4, borderRadius: '16px' }}>
                                 <Box
                                     component="img"
                                     src={pkg.image}

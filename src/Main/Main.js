@@ -2,12 +2,14 @@ import { Typography, Box, Button, ImageListItem } from '@mui/material';
 import mainlogo from './logo-rp.png';
 
 const Main = () => {
-    
+
 
     return (
         <Box sx={{ display: { sm: "flex" } }}>
-        
-            <Box sx={{ width: { xs: "100%", sm: "50%" }, display: { xs: 'flex', sm: 'none' }, justifyContent: "center" }}>
+
+            <Box data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" sx={{ width: { xs: "100%", sm: "50%" }, display: { xs: 'flex', sm: 'none' }, justifyContent: "center" }}>
                 <ImageListItem sx={{ width: "480px", height: "450px", mt: "-30px", display: { xs: 'block', sm: 'none' } }}>
                     <img src={mainlogo} alt='main' />
                 </ImageListItem>
@@ -37,13 +39,15 @@ const Main = () => {
                 </Box>
             </Box>
 
-            <Box sx={{ width: { xs: "100%", sm: "50%" }, display: "flex", justifyContent: "center" }}>
+            <Box data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" sx={{ width: { xs: "100%", sm: "50%" }, display: "flex", justifyContent: "center" }}>
                 <ImageListItem sx={{ width: "480px", height: "450px", mt: { md: "-20px" }, display: { xs: 'none', sm: 'block' } }}>
                     <img src={mainlogo} alt='main' />
                 </ImageListItem>
             </Box>
 
-            
+
         </Box>
     );
 }

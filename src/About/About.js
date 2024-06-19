@@ -5,8 +5,8 @@ import boat from './boat.jpg';
 const About = () => {
     return (
         <div id='about'>
-            <Box sx={{ mt: 8 }} >
-                <Box>
+            <Box sx={{ mt: {xs:8,md:12} }} >
+                <Box data-aos="zoom-in-up">
                     <Typography sx={{ fontWeight: "550", fontFamily: "serif", fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, px: { xs: 1, sm: 0 }, color: "#FF6B6B", textAlign: "center", letterSpacing: 2 }}>
                         About Us
                     </Typography>

@@ -48,7 +48,9 @@ export default function ElevateAppBar(props) {
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle}>
+        <Box data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" onClick={handleDrawerToggle}>
             <IconButton sx={{ my: 1, mx: 1 }}>
                 <CloseIcon />
             </IconButton>
@@ -109,7 +111,9 @@ export default function ElevateAppBar(props) {
                                 </ImageListItem>
                             </Box>
 
-                            <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
+                            <Box data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="1500" sx={{ display: { xs: 'none', sm: 'flex' } }}>
                                 <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                                     <Link smooth to='/#about' scroll={handleScroll} style={{ textDecoration: 'none' }}>
                                         <Typography sx={{ mx: { sm: 1, md: 2 }, color: "black", fontSize: { sm: "0.9rem", md: "1rem" } }}>About</Typography>
