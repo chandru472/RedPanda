@@ -48,7 +48,8 @@ const What = () => {
         >
             {showFab && (
                 <Box
-                    component='p'
+                    component='a'
+                    href='https://wa.me/916369842254'
                     sx={{
                         backgroundColor: '#25D366',
                         width: { xs: 56, sm: 64, md: 72 },
