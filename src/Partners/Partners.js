@@ -19,7 +19,7 @@ const Partners = () => {
             </Box>
 
             <Box sx={{mt:8}}>
-                <Grid container spacing={3} justifyContent={'center'}>
+                <Grid container spacing={2} justifyContent={'center'}>
 
                     <Grid item>
                         <Box component='img' src={via} alt='partner' height={80} width={112} />
