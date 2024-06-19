@@ -6,6 +6,7 @@ import What from './Main/What';
 import About from './About/About';
 import OurServices  from './Services/OurServices';
 import Travel from './Travel/Travel';
+import Packages from './Packages/Packages';
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
       <About />
       <OurServices />
       <Travel/>
+      <Packages/>
     </Box>
   )
 }

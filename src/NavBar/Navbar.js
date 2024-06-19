@@ -11,6 +11,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import PlaceIcon from '@mui/icons-material/Place';
 import logo1 from "./logo (1).png";
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -39,6 +41,8 @@ export default function ElevateAppBar(props) {
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
+    
+    
 
     const drawer = (
         <Box onClick={handleDrawerToggle}>
@@ -48,17 +52,21 @@ export default function ElevateAppBar(props) {
             <Divider />
 
             <List>
-                <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemText>About</ListItemText>
-                    </ListItemButton>
-                </ListItem>
+                <Link smooth to='/#about' style={{ textDecoration: 'none' }}>
+                    <ListItem disablePadding>
+                        <ListItemButton >
+                            <ListItemText>About</ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
 
-                <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemText>Services</ListItemText>
-                    </ListItemButton>
-                </ListItem>
+                <Link smooth to='/#services' style={{ textDecoration: 'none' }}>
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemText>Services</ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
 
                 <ListItem disablePadding sx={{ display: "flex", alignItems: "center" }}>
                     <PlaceIcon sx={{ ml: 1, my: 1.5 }} />
@@ -93,15 +101,18 @@ export default function ElevateAppBar(props) {
                     <Toolbar>
                         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", mx: { sm: 2, md: 6 }, my: { sm: 0.5, md: 1 } }}>
                             <Box sx={{ my: 0.5 }}>
-                                <ImageListItem sx={{width:{xs:40,sm:52},height:{xs:40,sm:52}}}>
+                                <ImageListItem sx={{ width: { xs: 40, sm: 52 }, height: { xs: 40, sm: 52 } }}>
                                     <img src={logo1} alt='logo' />
                                 </ImageListItem>
                             </Box>
 
                             <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
                                 <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <Typography sx={{ mx: { sm: 1, md: 2 }, color: "black", fontSize: { sm: "0.9rem", md: "1rem" } }}>About</Typography>
-                                    <Typography sx={{ mx: { sm: 1, md: 2 }, color: "black", fontSize: { sm: "0.9rem", md: "1rem" } }}>Services</Typography>
+                                    <Link smooth to='/#about' style={{ textDecoration: 'none' }}>                                    <Typography sx={{ mx: { sm: 1, md: 2 }, color: "black", fontSize: { sm: "0.9rem", md: "1rem" }, }}>About</Typography>
+                                    </Link>
+                                    <Link smooth to='/#services' style={{ textDecoration: 'none' }}>
+                                        <Typography sx={{ mx: { sm: 1, md: 2 }, color: "black", fontSize: { sm: "0.9rem", md: "1rem" } }}>Services</Typography>
+                                    </Link>
                                     <Box sx={{ display: "flex", alignItems: "center", mx: { sm: 1, md: 2 }, color: "black" }}>
                                         <PlaceIcon sx={{ ml: 1 }} />
                                         <Typography sx={{ fontSize: { sm: "0.9rem", md: "1rem" } }}>Ekkatuthangal, Chennai</Typography>

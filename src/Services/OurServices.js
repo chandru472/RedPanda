@@ -9,7 +9,7 @@ import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 
 const OurServices = () => {
     return (
-        <Box sx={{ mt: 12 }}>
+        <Box id='services' sx={{ mt: 12 }}>
             <Box>
                 <Typography sx={{ fontWeight: "550", fontFamily: "serif", fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, px: { xs: 1, sm: 0 }, color: "#FF6B6B", textAlign: "center",letterSpacing:2 }}>
                     Our Services

@@ -6,6 +6,7 @@ const Main = () => {
 
     return (
         <Box sx={{ display: { sm: "flex" } }}>
+        
             <Box sx={{ width: { xs: "100%", sm: "50%" }, display: { xs: 'flex', sm: 'none' }, justifyContent: "center" }}>
                 <ImageListItem sx={{ width: "480px", height: "450px", mt: "-30px", display: { xs: 'block', sm: 'none' } }}>
                     <img src={mainlogo} alt='main' />
